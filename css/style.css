@@ -440,6 +440,12 @@ textarea.form-control {
     min-height: 100px;
 }
 
+.small-note {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
 .hours {
     margin-bottom: 0;
     font-size: 14px;
@@ -479,6 +485,64 @@ textarea.form-control {
     align-self: flex-start;
 }
 
+.order-list {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.order-list legend {
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 14px;
+    padding: 16px;
+    border: 1px solid #dedfd5;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.order-item img {
+    width: 88px;
+    height: 88px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.order-item label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.order-item strong,
+.order-item small {
+    display: block;
+}
+
+.order-item small {
+    margin: 5px 0;
+    color: #62675d;
+}
+
+.order-item input {
+    width: 22px;
+    height: 22px;
+    accent-color: #42533b;
+    cursor: pointer;
+}
+
+.order-item input:checked + label strong {
+    color: #4b662f;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .result {
     max-width: 700px;
     margin: 65px auto;
@@ -490,12 +554,6 @@ textarea.form-control {
 
 .result h1 {
     font-size: 42px;
-}
-
-.small-note {
-    margin-top: 16px;
-    margin-bottom: 0;
-    font-size: 13px;
 }
 
 .footer {
@@ -617,6 +675,20 @@ textarea.form-control {
     .location,
     .result {
         padding: 24px;
+    }
+
+    .order-item {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .order-item img {
+        width: 62px;
+        height: 75px;
+    }
+
+    .order-item small {
+        font-size: 12px;
     }
 
     .footer-content {
