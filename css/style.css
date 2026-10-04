@@ -395,6 +395,45 @@ img[src="images/toast.jpg"] {
     object-position: center 75%;
 }
 
+.hours {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.hours caption {
+    padding-top: 0;
+    caption-side: top;
+    color: #62675d;
+}
+
+.hours th,
+.hours td {
+    padding: 13px 10px;
+    border-color: #dedfd5;
+    background-color: transparent;
+    color: #394333;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #e8eadf;
+}
+
+.location address {
+    margin-bottom: 20px;
+    color: #525e47;
+    font-style: normal;
+}
+
+.location .btn {
+    align-self: flex-start;
+}
+
 .small-note {
     margin-top: 16px;
     margin-bottom: 0;
@@ -516,7 +555,8 @@ img[src="images/toast.jpg"] {
         height: 240px;
     }
 
-    .panel {
+    .panel,
+    .location {
         padding: 24px;
     }
 
